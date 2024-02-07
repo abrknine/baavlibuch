@@ -1,10 +1,10 @@
+
 const express = require('express');
 const router = express.Router();
-const { User} = require("../controllers/UserController");
+//const upload = require('../middlewares/multer');
+const { UserController } = require('../controller/UserController.js');
 
-
-router.post('/user', User);
-
+router.post('/user',  UserController);
 
 
 module.exports = router;
